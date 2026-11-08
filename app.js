@@ -16,7 +16,7 @@ const seed=[
 {id:'fatui',term:'Фатуи',cat:'Места и фракции',mark:'❖',text:'Влиятельная организация из Снежной, действующая по всему Тейвату. Её дипломатические и военные интересы нередко сталкиваются с интересами других народов.',note:''}
 ];
 const defaultSettings={brand:'Полевые записи|Тейвата',eyebrow:'Личный архив кампании · Ли Юэ и за его пределами',title:'Заметки',accent:'Тейвата',intro:'Небольшой путеводитель по словам, силам и существам мира. Загляни сюда, если имя вертится на языке, а смысл ускользнул.',quote:'«Мир полон тайн, которые ждут, когда их наконец назовут.»',quoteBy:'Из полевого дневника Путешественника',footer:'Справочник для вашей кампании · Фанатский материал',categories:defaultCats.slice(),randomNotes:['У каждого Глаза Бога своя история — и своя причина загореться.','В Ли Юэ клятвы и договоры могут связывать не только людей.','Семь стихий по-разному откликаются на тех, кто ими владеет.','За знакомыми легендами Тейвата часто скрываются старые договоры.']};
-let data=seed.map(x=>({...x})),settings={...defaultSettings},cat='Все записи',query='',isGM=false,remoteVersion='',noteIndex=-1;
+let data=seed.map(x=>({...x})),settings={...defaultSettings},cat='Все записи',query='',isGM=false,remoteVersion='',noteIndex=Math.floor(Math.random()*defaultSettings.randomNotes.length);
 const db=window.supabase.createClient('https://pvgoakqldzgwcdpcfvad.supabase.co','sb_publishable_jlE4yELivrTWfRyp0IKREQ_8AIkJ5jz');
 fetch('assets/lyuta-photo.b64').then(r=>r.text()).then(s=>document.querySelector('.mascot.owl').src='data:image/png;base64,'+s.trim()).catch(()=>{});
 function status(message){const el=document.querySelector('#syncStatus');if(el)el.textContent=message}
