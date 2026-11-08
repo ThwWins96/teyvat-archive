@@ -13,9 +13,65 @@ body{color:var(--ink);background-color:var(--bg);background-image:radial-gradien
 .shell{position:relative;z-index:1}.brand{color:var(--lav)}.sigil{border-color:#7fa8d6;box-shadow:0 0 25px #7fa8d644}.btn{background:#fff7d6;color:var(--ink);border-color:#d6d7d0}.btn:hover{border-color:#7fa8d6;background:#fff2b2}.btn.primary{background:#7fa8d6;color:#fff;border-color:#7fa8d6}.hero{border-color:#ffffff9c}.eyebrow{color:#896b2c}.hero h1 span{color:#5279a6}.hero p,.quote{color:var(--muted)}.quote{border-color:#7fa8d6}.quote small{color:var(--dim)}.side-label,.count{color:#647b97}.nav button{color:#536982}.nav button:hover,.nav button.active{background:#fff2b2;color:#3e5f87}.nav button span{color:#7589a0}.side-note{border-color:#fff7d6;background:#fff7d6aa;color:#536982}.side-note b,.tag{color:#936d28}.content-head h2{color:#334c70}.searchbox{border-color:#fff;background:#fff7d6cc}.searchbox input{color:var(--ink)}.searchbox input::placeholder{color:#8294a8}.cards{gap:16px}.card{border-color:#fff;background:linear-gradient(145deg,#fff7d6f5,#ffffffed);box-shadow:0 12px 32px #38577b24}.card:hover{border-color:#7fa8d6}.mark{color:#7fa8d6}.card h3{color:#334c70}.card p{color:#536982}.card .gmnote{border-color:#d7e2ef;color:#526e92}.card .gmnote b{color:#5279a6}.card-actions button{border-color:#b6c9df;color:#476d9a}.empty{color:#536982;border-color:#7fa8d6}.gmbar{border-color:#7fa8d6;background:#fff2b2;color:#3e5f87}.gm .card{border-color:#7fa8d6}.gm .add-card{border-color:#7fa8d6;background:#fff7d6;color:#476d9a}.gm .add-card:hover{background:#fff2b2}.modal{background:#fff7d6;border-color:#b6c9df}.modal h3{color:#334c70}.modal p{color:#596f8a}.modal label{color:#6e829b}.modal input,.modal textarea,.modal select{border-color:#d3dfec;background:#fff;color:#334c70}.modal input:focus,.modal textarea:focus{border-color:#7fa8d6}.error{color:#a84949}.veil{background:#283c5877}.foot{border-color:#ffffffad;color:#667e98}.foot a{color:#486b98}
 .mascots{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}.mascot{position:absolute;bottom:-10px;width:clamp(110px,13vw,180px);height:auto;opacity:.20;filter:drop-shadow(0 8px 10px #42658b38)}.mascot.fairy{left:calc(50% - 650px)}.mascot.owl{right:calc(50% - 650px)}
 .foot a:hover{color:#294b78}@media(max-width:1200px){.mascots{display:none}}@media(max-width:800px){body{background-size:auto,auto,auto,72px 72px,72px 72px}.gmbar{align-items:flex-start;gap:10px;flex-direction:column}}
+.crystal-pattern{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;opacity:.38}
+.crystal-pattern svg{width:100%;height:100%;display:block}
+body{background-image:radial-gradient(ellipse at 50% -10%,#fff7d6 0,transparent 44%),radial-gradient(ellipse at 90% 35%,#fff2b277 0,transparent 24%),radial-gradient(ellipse at 8% 77%,#ffe08a66 0,transparent 25%);background-size:auto}
+.mascots{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.mascot{position:absolute;bottom:-18px;height:auto;opacity:.42;filter:drop-shadow(0 10px 12px #42658b40)}
+.mascot.fairy{left:max(18px,calc(50% - 770px));width:clamp(150px,16vw,230px)}
+.mascot.owl{right:max(18px,calc(50% - 770px));width:clamp(175px,18vw,255px)}
+.shell{position:relative;z-index:1}
+@media(max-width:1200px){.mascots{display:none}}
+@media(max-width:800px){.crystal-pattern{opacity:.28}}
 </style>
 </head>
-<body><div class="mascots" aria-hidden="true"><svg class="mascot fairy" viewBox="0 0 180 390" fill="#38577b" xmlns="http://www.w3.org/2000/svg"><g opacity=".55" stroke="#fff7d6" stroke-width="3"><path d="M91 111C20 40 7 142 77 159M106 111c70-72 82 31 12 48M85 124C17 114 26 194 79 174M113 124c66-10 59 70 6 50" fill="#7fa8d6"/><path d="M42 86l8-20 9 20-9 18zM136 161l7-17 8 17-8 12z" fill="#fff2b2"/></g><path d="M62 102q-15-27 2-48l13 10 13-29 13 29 20-12q13 33-6 52l-1 32q22 18 17 41l-14 15 18 53-20 72-18 29H73l-26-34 13-73 14-44-20-19q-7-22 8-40z"/><path d="M62 90q-14-17-9-37l17 9q13-28 32-29 24 2 34 29l11-8q3 30-13 41l-18 9-23-9-15 9z"/><path d="M73 180q17 16 38 0l18 71-37 37-38-38z" fill="#486b98"/><path d="M75 210l-26 29m63-29 24 29M75 286l-12 65m36-64 9 67" fill="none" stroke="#38577b" stroke-width="12" stroke-linecap="round"/><path d="M104 126q10-8 18 0m-43 0q9-8 16 0" fill="none" stroke="#fff7d6" stroke-width="4" stroke-linecap="round"/></svg><svg class="mascot owl" viewBox="0 0 210 300" fill="#38577b" xmlns="http://www.w3.org/2000/svg"><path d="M43 58 30 8l48 31q27-13 55 0l47-31-13 53q20 33 11 90-8 48-37 70l31 69h-38l-26-53H91l-25 53H29l31-70q-29-24-36-70-8-55 19-92z"/><path d="M52 80q20-37 50-34 31-2 55 34 8 47-6 87-15 42-50 45-38-4-52-45-14-40 3-87z" fill="#fff7d6"/><path d="M68 97q17-20 34 0l-17 20zm39 0q18-20 36 0l-18 20z" fill="#7fa8d6"/><circle cx="84" cy="104" r="8" fill="#334c70"/><circle cx="125" cy="104" r="8" fill="#334c70"/><path d="m104 116-12 17h25z" fill="#ffe08a"/><path d="M64 178q40-31 81 0l14 28q-54 29-109 0z" fill="#486b98"/><path d="M78 208v26m52-26v26" stroke="#fff2b2" stroke-width="6" stroke-linecap="round"/><path d="m47 50 27 17m89-17-27 17" stroke="#fff2b2" stroke-width="6" opacity=".65"/></svg></div><div class="shell" id="app">
+<body>
+<div class="crystal-pattern" aria-hidden="true"><svg viewBox="0 0 132 132" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="primogemPattern" width="132" height="132" patternUnits="userSpaceOnUse"><g transform="translate(23 18) scale(.78)" stroke-linejoin="round"><path d="M66 3Q70 3 73 10L94 48l39 21q7 4 0 8L94 99l-21 38q-7 12-14 0L37 99-2 77q-8-4 0-8l39-21L58 10q4-7 8-7Z" fill="#fff7d6" stroke="#7fa8d6" stroke-width="3"/><path d="m66 7 4 54-33-13z" fill="#ffd9e7"/><path d="m70 61 23-13 37 25-60 6z" fill="#78c8ec"/><path d="m70 61 60 12-37 22z" fill="#4aaee2"/><path d="m70 61-33-13L1 73l69 4z" fill="#b9ecff"/><path d="m70 77-33 22 29 34 4-56z" fill="#89d4f2"/><path d="m70 77 24 22-27 35z" fill="#58bce9"/><path d="m66 7 4 54-4 16-4-16z" fill="#fff"/><path d="m38 48 32 13-33-13 33 29L1 73z" fill="#e9faff" opacity=".72"/><path d="m70 61 23-13 37 25-60 4z" fill="#c4f3ff" opacity=".4"/></g></pattern></defs><rect width="100%" height="100%" fill="url(#primogemPattern)"/></svg></div>
+<div class="mascots" aria-hidden="true">
+<svg class="mascot fairy" viewBox="0 0 240 480" xmlns="http://www.w3.org/2000/svg">
+<g stroke-linecap="round" stroke-linejoin="round">
+<g fill="#7fa8d6" stroke="#fff7d6" stroke-width="3" opacity=".62">
+<path d="M107 143C54 56 6 87 43 166c16 34 39 42 68 30-51 33-59 83-22 87 27 3 38-40 38-84z"/>
+<path d="M133 143c53-87 101-56 64 23-16 34-39 42-68 30 51 33 59 83 22 87-27 3-38-40-38-84z"/>
+</g>
+<g fill="none" stroke="#fff7d6" stroke-width="2" opacity=".76">
+<path d="M105 158C66 117 42 113 34 101M107 187c-32 4-54 30-56 57M135 158c39-41 63-45 71-57M133 187c32 4 54 30 56 57"/>
+</g>
+<path d="M84 125 57 111l-4-27 34 16m70 25 27-14 4-27-34 16" fill="#62b5d9" stroke="#38577b" stroke-width="4"/>
+<path d="M82 93c-5-25 3-48 22-61l-2-22 21 17c23-18 50-4 54 25 4 27-7 49-28 59l-8 39-44 2-7-36z" fill="#38577b"/>
+<path d="M78 76c-9-23-1-48 17-61 20 13 45 4 61 13 22 13 24 41 8 58l-17-7-12-23-22 27-20-13z" fill="#536f9d"/>
+<path d="M90 79c-5 22-1 44 12 56 13 12 30 10 40-3 11-15 10-39 4-55l-15-14-18 8-15-9z" fill="#fff7d6"/>
+<path d="m88 79-20 3 17 12m65-15 20 3-17 12" fill="#fff7d6" stroke="#38577b" stroke-width="3"/>
+<path d="M100 98q8-8 16 0m17 0q8-8 16 0" fill="none" stroke="#38577b" stroke-width="4"/>
+<path d="m119 106-3 7 7 1" fill="none" stroke="#d68c83" stroke-width="2"/>
+<path d="M104 132 87 160l-21 24 13 9 34-22 10-18m15-21 17 28 25 20-13 11-37-22-9-17" fill="#38577b"/>
+<path d="M100 145q20 13 43 0l15 94-28 22-43-20z" fill="#684e83"/>
+<path d="m100 147-15 13-20 24 14 9 28-19m36-27 17 16 22 22-13 11-31-22" fill="none" stroke="#38577b" stroke-width="13"/>
+<path d="m101 179 41 0-8 43-20 17-18-26z" fill="#7fa8d6"/>
+<path d="M91 235 69 293l15 6 37-49 18 49 16-6-13-62-29 14z" fill="#38577b"/>
+<path d="m71 291-12 89 17 2 22-82m38-3 13 83 17-3-8-91" fill="none" stroke="#38577b" stroke-width="14"/>
+<path d="m58 379-6 15 28 4 2-13m84-8 9 14 24-9-8-12" fill="#684e83"/>
+<path d="m69 162 5 5m81-5-5 5M97 231h43" fill="none" stroke="#ffe08a" stroke-width="4" opacity=".9"/>
+<path d="M43 64l5-13 5 13 13 5-13 5-5 13-5-13-13-5zM189 267l4-11 4 11 11 4-11 4-4 11-4-11-11-4z" fill="#fff2b2" stroke="none"/>
+</g></svg>
+<svg class="mascot owl" viewBox="0 0 270 420" xmlns="http://www.w3.org/2000/svg">
+<g stroke-linecap="round" stroke-linejoin="round">
+<path d="m60 73-18-59 58 38q36-22 73 0l57-38-17 66q27 39 18 103-9 68-52 95l38 98h-51l-33-79h-48l-34 79H1l39-101Q-1 245-6 180-10 112 21 80z" transform="translate(15 0)" fill="#38577b"/>
+<path d="M71 93q22-41 64-43 42 2 65 43 11 61-7 103-18 41-58 46-40-5-58-46-18-42-6-103z" fill="#fff7d6"/>
+<path d="M72 119q22-24 48 0l-24 28zm58 0q25-24 49 0l-25 28z" fill="#7fa8d6"/>
+<ellipse cx="96" cy="127" rx="9" ry="13" fill="#334c70"/><ellipse cx="155" cy="127" rx="9" ry="13" fill="#334c70"/>
+<path d="m125 140-13 20 27 0z" fill="#ffe08a"/>
+<path d="M68 197q56-43 113 0l29 49q-88 47-171 0z" fill="#486b98"/>
+<path d="m91 200 34 31 35-31-15 63h-39z" fill="#fff7d6"/>
+<path d="m125 231-16 32h32z" fill="#7fa8d6"/>
+<path d="M93 267h65l13 111-27 9-18-70-17 70-27-9z" fill="#38577b"/>
+<path d="m91 286 34 25 36-25m-34-54v132" fill="none" stroke="#7fa8d6" stroke-width="5" opacity=".75"/>
+<path d="m101 26 11 51m54-51-11 51" fill="none" stroke="#fff2b2" stroke-width="6" opacity=".75"/>
+<path d="M78 174q17 13 36 0m22 0q20 13 38 0" fill="none" stroke="#d6a866" stroke-width="3"/>
+<path d="m66 362-15 19h42m72-19 15 19h-42" fill="#ffe08a" stroke="#38577b" stroke-width="4"/>
+<path d="M125 62v-26m-50 40 12-17m76 17-12-17" fill="none" stroke="#fff7d6" stroke-width="3" opacity=".7"/>
+</g></svg></div>
+<div class="shell" id="app">
 <header class="top"><div class="brand"><div class="sigil">✦</div><div>Полевые записи<br>Тейвата</div></div><div class="top-actions"><button class="btn" id="gmBtn">♢ Режим ГМа</button></div></header>
 <section class="hero"><div><div class="eyebrow">Личный архив кампании · Ли Юэ и за его пределами</div><h1>Заметки<br><span>Тейвата</span></h1><p>Небольшой путеводитель по словам, силам и существам мира. Загляни сюда, если имя вертится на языке, а смысл ускользнул.</p></div><div class="quote">«Мир полон тайн, которые ждут, когда их наконец назовут.»<small>Из полевого дневника Путешественника</small></div></section>
 <div class="workspace"><aside class="side"><div class="side-label">Разделы архива</div><nav class="nav" id="nav"></nav><div class="side-note"><b>На полях</b>Записи ГМа видны только в этом браузере. Чтобы поделиться обновлениями, экспортируй архив и отправь файл игрокам.</div></aside><main><div class="gmbar"><span>✧ Режим ГМа включён · изменения сохраняются на этом устройстве</span><div style="display:flex;gap:7px;flex-wrap:wrap;justify-content:end"><button class="btn" id="exportBtn">Экспорт</button><button class="btn" id="importBtn">Импорт</button><input type="file" id="importFile" accept="application/json,.json" hidden><button class="btn" id="exitBtn">Выйти</button></div></div><div class="content-head"><div><h2 id="sectionTitle">Все записи</h2><div class="count" id="count"></div></div><label class="searchbox">⌕ <input id="search" placeholder="Найти термин…" aria-label="Найти термин"></label></div><div class="cards" id="cards"></div></main></div>
@@ -46,4 +102,5 @@ function edit(id){const t=data.find(x=>x.id===id)||{id:'',term:'',cat:'Терм�
 function remove(id){const t=data.find(x=>x.id===id);if(t&&confirm(`Удалить «${t.term}»?`)){data=data.filter(x=>x.id!==id);save();render()}}
 document.querySelector('#gmBtn').onclick=login;document.querySelector('#exitBtn').onclick=()=>{isGM=false;document.querySelector('#app').classList.remove('gm');render()};document.querySelector('#search').oninput=e=>{query=e.target.value;render()};document.querySelector('#veil').onclick=e=>{if(e.target.id==='veil')close()};document.querySelector('#exportBtn').onclick=()=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json'}));a.download='teyvat-archive.json';a.click();URL.revokeObjectURL(a.href)};document.querySelector('#importBtn').onclick=()=>document.querySelector('#importFile').click();document.querySelector('#importFile').onchange=async e=>{const f=e.target.files[0];if(!f)return;try{const v=JSON.parse(await f.text());if(!Array.isArray(v)||!v.every(x=>x.term&&x.cat&&x.text))throw new Error();data=v.map(x=>({...x,id:x.id||crypto.randomUUID(),note:x.note||''}));save();render();alert('Архив загружен.')}catch{alert('Не удалось прочитать файл архива.')}e.target.value=''};render();
 </script></body></html>
+
 
